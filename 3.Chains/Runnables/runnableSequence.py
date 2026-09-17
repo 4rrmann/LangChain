@@ -24,4 +24,4 @@ prompt2 = PromptTemplate(
 
 chain = RunnableSequence(prompt1, model, parser, prompt2, model, parser)
 
-print(chain.invoke({'chr':'Levi'}))
+print(chain.invoke({'chr':'Levi Ackerman'}))
