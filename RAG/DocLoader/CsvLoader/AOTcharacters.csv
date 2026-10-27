@@ -1,0 +1,47 @@
+id,name,gender,affiliation,role,titan_power,is_ackerman,season_introduced,status_at_series_end,notable_trait
+1,Eren Yeager,Male,Survey Corps / Yeagerists,Protagonist,Attack Titan; Founding Titan,No,S1,Deceased,"Determined, impulsive, obsessed with freedom"
+2,Mikasa Ackerman,Female,Survey Corps,Elite soldier,None,Yes,S1,Alive,"Fiercely loyal, exceptional fighter"
+3,Armin Arlert,Male,Survey Corps,Strategist,Colossal Titan (from S3),No,S1,Alive,"Brilliant tactician, empathetic"
+4,Levi Ackerman,Male,Survey Corps,Captain,None,Yes,S1,Alive,"Humanity's strongest soldier, obsessive about cleanliness"
+5,Erwin Smith,Male,Survey Corps,13th Commander,None,No,S1,Deceased,"Calculating, charismatic, driven by truth"
+6,Hange Zoe,Unspecified,Survey Corps,14th Commander / Titan researcher,None,No,S1,Deceased,"Enthusiastic, eccentric genius"
+7,Jean Kirstein,Male,Survey Corps,Soldier,None,No,S1,Alive,"Blunt, practical, natural leader"
+8,Connie Springer,Male,Survey Corps,Soldier,None,No,S1,Alive,"Cheerful, loyal"
+9,Sasha Braus,Female,Survey Corps,Soldier / archer,None,No,S1,Deceased,"Hunter with a huge appetite, warm-hearted"
+10,Historia Reiss,Female,Royal Family / Survey Corps,Queen of the Walls,None,No,S1,Alive,"Selfless, learns to live for herself"
+11,Ymir,Female,104th Training Corps,Soldier,Jaw Titan,No,S1,Deceased,"Sharp-tongued, protective of Historia"
+12,Reiner Braun,Male,Marleyan Warriors,Warrior,Armored Titan,No,S1,Alive,"Guilt-ridden, dutiful"
+13,Bertholdt Hoover,Male,Marleyan Warriors,Warrior,Colossal Titan,No,S1,Deceased,"Shy, anxious, tall"
+14,Annie Leonhart,Female,Marleyan Warriors,Warrior,Female Titan,No,S1,Alive,"Aloof, skilled fighter"
+15,Zeke Yeager,Male,Marleyan Warriors,Warrior Chief,Beast Titan,No,S2,Deceased,"Cynical, plans Eldian euthanasia"
+16,Pieck Finger,Female,Marleyan Warriors,Warrior,Cart Titan,No,S4,Alive,"Calm, observant"
+17,Porco Galliard,Male,Marleyan Warriors,Warrior,Jaw Titan,No,S4,Deceased,"Hot-tempered, lives in his brother's shadow"
+18,Marcel Galliard,Male,Marleyan Warriors,Warrior,Jaw Titan,No,S4,Deceased,Gentle older brother
+19,Falco Grice,Male,Marleyan Warriors,Warrior candidate,Jaw Titan,No,S4,Alive,"Kind-hearted, wants to protect others"
+20,Gabi Braun,Female,Marleyan Warriors,Warrior candidate,None,No,S4,Alive,"Proud, fiery, grows to see people differently"
+21,Grisha Yeager,Male,Eldian Restorationists,Doctor / former Attack Titan,Attack Titan; Founding Titan,No,S1,Deceased,"Haunted by guilt, loving father"
+22,Carla Yeager,Female,Yeager Family,Mother of Eren,None,No,S1,Deceased,"Caring, protective"
+23,Dot Pixis,Male,Garrison,Garrison Commander,None,No,S1,Unclear,"Eccentric, shrewd"
+24,Kenny Ackerman,Male,Military Police,Leader of the Anti-Personnel Control Squad,None,Yes,S3,Deceased,Cynical killer who raised Levi
+25,Rod Reiss,Male,Royal Family,Secret ruler,Giant deformed Titan (S3),No,S3,Deceased,Zealous believer in his family's duty
+26,Frieda Reiss,Female,Royal Family,Former Founding Titan holder,Founding Titan (previous),No,S3,Deceased,"Wise, protective of Historia"
+27,Keith Shadis,Male,Survey Corps (former commander),Drill instructor,None,No,S1,Unclear,Gruff but caring mentor
+28,Moblit Berner,Male,Survey Corps,Hange's assistant,None,No,S1,Deceased,"Loyal, anxious"
+29,Nile Dok,Male,Military Police,Brigade Commander,None,No,S1,Unclear,Decent man inside a corrupt system
+30,Marlowe Freudenberg,Male,Military Police,Officer,None,No,S1,Unclear,"Honest, questions orders"
+31,Hitch Dreyse,Female,Military Police,Officer,None,No,S1,Unclear,"Lazy-seeming, secretly loyal"
+32,Floch Forster,Male,Survey Corps / Yeagerists,Yeagerist leader,None,No,S3,Deceased,Bitter survivor turned extremist
+33,Onyankopon,Male,Anti-Marleyan Volunteers,Pilot / ally,None,No,S4,Alive,"Kind, practical"
+34,Yelena,Female,Anti-Marleyan Volunteers,Zeke's follower,None,No,S4,Unclear,Fanatical devotion to Zeke
+35,Willy Tybur,Male,Marley,Head of the Tybur family,None,No,S4,Deceased,Charismatic public face of Marley's war
+36,Karl Fritz,Male,Royal Family,145th king,Founding Titan (former),No,S4,Deceased,Pacifist who retreated to Paradis
+37,Ymir Fritz,Female,Origin of the Titans,First Titan,Founding Titan (source),No,S4,Freed after two thousand years,Bound to serve her king
+38,Petra Ral,Female,Survey Corps (Levi Squad),Soldier,None,No,S1,Deceased,"Cheerful, admired Levi"
+39,Oluo Bossard,Male,Survey Corps (Levi Squad),Soldier,None,No,S1,Deceased,"Brash, imitates Levi"
+40,Eld Jinn,Male,Survey Corps (Levi Squad),Soldier,None,No,S1,Deceased,Calm veteran
+41,Gunther Schultz,Male,Survey Corps (Levi Squad),Soldier,None,No,S1,Deceased,"Reliable, quiet"
+42,Isabel Magnolia,Female,Underground / Survey Corps,Soldier,None,No,OVA (No Regrets),Deceased,"Energetic, idolised Levi"
+43,Farlan Church,Male,Underground / Survey Corps,Soldier,None,No,OVA (No Regrets),Deceased,Level-headed leader
+44,Mike Zacharias,Male,Survey Corps,Squad Leader,None,No,S1,Deceased,Keen sense of smell for Titans
+45,Marco Bott,Male,104th Training Corps,Cadet,None,No,S1,Deceased,"Kind, principled"
+46,Hannes,Male,Garrison,Soldier,None,No,S1,Deceased,Flawed but redeems himself
