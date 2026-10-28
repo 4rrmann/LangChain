@@ -172,5 +172,6 @@ splitter = RecursiveCharacterTextSplitter(
     chunk_overlap=150,
 )
 
-result = splitter.split_text(text)
-print(result)
+chunks = splitter.split_text(text)
+print("Length of Chunks: ",len(chunks))
+print(chunks)
