@@ -170,7 +170,7 @@ Across all four seasons, Attack on Titan is about freedom and its price, the cyc
 splitter = CharacterTextSplitter(
     chunk_size=1000,
     chunk_overlap=150,
-    separator="\n\n" # The splitter never cuts inside a paragraph, so a few chunks will run slightly over the limit
+    separator=" "
 )
 
 result = splitter.split_text(text)
