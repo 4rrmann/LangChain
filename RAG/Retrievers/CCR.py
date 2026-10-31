@@ -34,16 +34,24 @@ documents = [doc1, doc2, doc3, doc4]
 
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_anthropic import ChatAnthropic
-from langchain.retrievers import ContextualCompressionRetriever
-from langchain.retrievers.document_compressors import LLMChainExtractor
+from langchain_groq import ChatGroq
+from langchain_classic.retrievers import ContextualCompressionRetriever
+from langchain_classic.retrievers.document_compressors import LLMChainExtractor
+from dotenv import load_dotenv
+load_dotenv()
+
 
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 vectorstore = FAISS.from_documents(documents, embeddings)
+
 base_retriever = vectorstore.as_retriever(search_kwargs={"k": 2})
 
-llm = ChatAnthropic(model="claude-sonnet-4-5", temperature=0)
+
+llm = ChatGroq(
+    model='openai/gpt-oss-120b'
+)
 compressor = LLMChainExtractor.from_llm(llm)
+
 
 compression_retriever = ContextualCompressionRetriever(
     base_compressor=compressor,
@@ -51,7 +59,17 @@ compression_retriever = ContextualCompressionRetriever(
 )
 
 query = "How did Eren seal the hole in the wall at Trost?"
-results = compression_retriever.invoke(query)
+compressed_results = compression_retriever.invoke(query)
+base_results = base_retriever.invoke(query)
 
-for d in results:
-    print("-", d.page_content)
+
+
+for i, doc in enumerate(base_results):
+    print(f"\nResult {i+1}:")
+    print(doc.page_content)
+
+print("\n","*"*17)
+
+for i, doc in enumerate(compressed_results):
+    print(f"\nResult {i+1}:")
+    print(doc.page_content)
