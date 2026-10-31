@@ -18,22 +18,39 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
 from langchain_classic.retrievers import MultiQueryRetriever
 from dotenv import load_dotenv
+load_dotenv()
+
 
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 vectorstore = FAISS.from_documents(documents, embeddings)
 
-load_dotenv()
+
 llm = ChatGroq(
     model='openai/gpt-oss-120b'
 )
 
-retriever = MultiQueryRetriever.from_llm(
-    retriever=vectorstore.as_retriever(search_kwargs={"k": 2}),
+
+# Retrievers:
+similarity_retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 5})
+
+multiquery_retriever = MultiQueryRetriever.from_llm(
+    retriever=vectorstore.as_retriever(search_kwargs={"k": 5}),
     llm=llm,
 )
 
-results = retriever.invoke("Who destroyed the walls?")
+# Query:
+query = "Who was responsible for the fall of Wall Maria, and what role did each Titan shifter play in the attack?"
 
-for i, doc in enumerate(results):
+# Retrieve Results:
+similarity_results = similarity_retriever.invoke(query)
+multiquery_results = multiquery_retriever.invoke(query)
+
+for i, doc in enumerate(similarity_results):
+    print(f"\nResult {i+1}:")
+    print(doc.page_content)
+
+print("\n","*"*17)
+
+for i, doc in enumerate(multiquery_results):
     print(f"\nResult {i+1}:")
     print(doc.page_content)
