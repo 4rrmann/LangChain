@@ -20,7 +20,7 @@ searchtool = DuckDuckGoSearchRun()
 def get_weather_data(city: str) -> str:
     """This function fetches the current weather data for a given city"""
 
-    url = f"https://api.weatherstack.com/current?access_key=61fdb7825d74577ebb4acbb36ff155d1&query={city}"
+    url = f"https://api.weatherstack.com/current?access_key=(hello!apikey:)&query={city}"
 
     response = requests.get(url)
     return response.json()
